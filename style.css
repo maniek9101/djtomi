@@ -130,80 +130,77 @@
     
     .container-fluid-meet-me {
         border: 1px solid black;
+        padding-left: 192.5px;
+        padding-top: 16px;
         width: 100vw;
         max-width: 1280px;
-        height: 280px;
-        position: relative;
+        height: auto;
+        min-height: 280px;
         background: url('images/digit-one.png');
         background-size: 122px 233px;
         background-position: left top;
         background-repeat: no-repeat;
     }
     
-    .container-fluid-meet-me p:nth-of-type(1) {
-        position: absolute;
-        top: 16px;
-        left: 192.5px;
+    .container-fluid-meet-me p {
         font-family: 'Muli', sans-serif;
+    }
+    
+    .container-fluid-meet-me p:nth-of-type(1) {
         font-size: 77.5px;
         line-height: 70%;
+        margin: 0 0 31.5px 0;
     }
     
     .container-fluid-meet-me p:nth-of-type(2) {
-        position: absolute;
-        top: 105px;
-        left: 192.5px;
-        font-family: 'Muli', sans-serif;
         font-size: 14.5px;
     }
     
     .container-fluid-offert {
         border: 1px solid red;
+        padding-top: 16px;
+        padding-right: 175px;
         width: 100vw;
         max-width: 1280px;
-        height: 280px;
+        height: auto;
+        min-height: 280px;
         background: url('images/digit-two.png');
         background-size: 162.5px 236.5px;
         background-position: right top;
         background-repeat: no-repeat;
-        position: relative;
+    }
+    
+    .container-fluid-offert p {
+        font-family: 'Muli', sans-serif;
+        text-align: right;
     }
     
     .container-fluid-offert p:nth-of-type(1) {
-        font-family: 'Muli', sans-serif;
         font-size: 77.5px;
         line-height: 70%;
-        position: absolute;
-        top: 15px;
-        right: 175px;
+        margin-bottom: 35px;
     }
     
     .container-fluid-offert p:nth-of-type(2) {
-        font-family: 'Muli', sans-serif;
         font-size: 14.5px;
-        text-align: right;
-        position: absolute;
-        top: 110px;
-        right: 175px;
     }
     
     .container-fluid-device {
         border: 1px solid rgb(0, 255, 64);
+        padding: 20px 0 0 200px;
         width: 100vw;
         max-width: 1280px;
-        height: 477.5px;
+        height: auto;
+        min-height: 477.5px;
         background: url('images/digit-three.png');
         background-size: 167.5px 240.5px;
         background-position: left top;
         background-repeat: no-repeat;
-        position: relative;
     }
     
     .container-fluid-device ul {
-        position: absolute;
-        left: 200px;
-        top: 162.5px;
         border: 1px solid red;
+        margin-bottom: 24px;
     }
     
     .container-fluid-device ul li {
@@ -216,44 +213,35 @@
         font-family: 'Muli', sans-serif;
         font-size: 77.5px;
         line-height: 70%;
-        position: absolute;
-        top: 20px;
-        left: 200px;
+        margin-bottom: 31px;
     }
     
     .container-fluid-device p:nth-of-type(2) {
         font-family: 'Muli', sans-serif;
         font-size: 14.5px;
-        position: absolute;
-        top: 110px;
-        left: 200px;
+        margin-bottom: 20px;
     }
     
     .container-fluid-device p:nth-of-type(3) {
         font-family: 'Muli', sans-serif;
         font-size: 14.5px;
         color: #e50045;
-        position: absolute;
-        top: 355px;
-        left: 200px;
     }
     
     .container-fluid-contact {
         width: 100vw;
         max-width: 1280px;
+        height: auto;
         border: 1px solid green;
-        position: relative;
-        padding-top: 122.5px;
+        padding-left: 222px;
     }
     
     .container-fluid-contact p {
-        position: absolute;
-        left: 217px;
-        top: 0;
         color: #e50045;
         font-size: 77.5px;
         line-height: 70%;
         font-family: 'Muli', sans-serif;
+        margin-bottom: 65px;
     }
     
     .container-fluid-contact form {
@@ -261,9 +249,7 @@
         height: 235px;
         border: 1px solid red;
         display: flex;
-        /*justify-content: center;*/
         flex-direction: row;
-        position: relative;
     }
     
     .container-fluid-contact form .form-left {
@@ -273,8 +259,7 @@
         color: #000000;
         font-family: 'Muli', sans-serif;
         font-size: 14.5px;
-        position: absolute;
-        left: 222px;
+        margin-right: 135.5px;
     }
     
     .form-left label {
@@ -296,6 +281,7 @@
         line-height: initial;
         font-family: 'Muli', sans-serif;
         font-size: 16.5px;
+        margin-bottom: initial;
     }
     
     .container-fluid-contact form .form-right {
@@ -305,8 +291,6 @@
         color: #000000;
         font-family: 'Muli', sans-serif;
         font-size: 14.5px;
-        position: absolute;
-        left: 774px;
     }
     
     .form-right textarea {
