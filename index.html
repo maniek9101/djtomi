@@ -10,16 +10,22 @@
 </head>
 
 <body>
-    <header class="container-fluid-header">
-        <nav>
-            <ul>
+    <header class="container-fluid-header" id="main-page">
+        <div class="header-nav">
+            <div class="header-nav-mobile">
                 <img src="images/logo_small_white.png">
-                <li><a href="#"><b>O MNIE</b></a></li>
-                <li><a href="#"><b>OFERTA</b></a></li>
-                <li><a href="#"><b>SPRZĘT</b></a></li>
-                <li><a href="#"><b>KONTAKT</b></a></li>
-            </ul>
-        </nav>
+                <button>MENU</button>
+            </div>
+            <nav>
+                <ul>
+                    <a class="empty main-page"><img src="images/logo_small_white.png"></a>
+                    <li><a class="hover-effect meet-me" href="#meet-me"><b>O MNIE</b></a></li>
+                    <li><a class="hover-effect offert" href="#offert"><b>OFERTA</b></a></li>
+                    <li><a class="hover-effect device" href="#device"><b>SPRZĘT</b></a></li>
+                    <li><a class="hover-effect contact" href="#contact"><b>KONTAKT</b></a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="container-fluid-header-content">
             <img src="images/logo_circle.png">
             <div class="container-fluid-header-content-logo">
@@ -30,7 +36,7 @@
         </div>
     </header>
     <div class="container-fluid-sections-all">
-        <div class="container-fluid-meet-me">
+        <div class="container-fluid-meet-me" id="meet-me">
             <p><b>POZNAJ MNIE</b></p>
             <p>Muzyka wyrasta z uczuć...- to myśl, która mną kieruje. Tylko to co się kocha i sprawia przyjemność można wykonywać z pełnym zaangażowaniem i poświęceniem. Jeśli nie skorzystasz z mojej oferty, dana okazja może się już nie powtórzyć i ominą
                 Was, niezapomniane chwile i wspaniałe EMOCJE. Wiem, że chcesz, aby Twoja impreza była wyjątkowa a muzyka najlepsza. Muzyka to główny czynnik, od którego będzie zależała udana zabawa, więc nie może być tu miejsca na przypadek. Każdy dobry
@@ -39,14 +45,14 @@
                 <br><br> Czułem to samo co TY, kiedy organizowałem swoje przyjęcie i znalazłem rozwiązanie <img align="middle" src="images/logo_small_black.png" style="width:70.5px;height:29px;"> to gwarancja niezapomnianych chwil i wspomnień, które na
                 długie lata pozostaną w Twojej pamięci.</p>
         </div>
-        <div class="container-fluid-offert">
+        <div class="container-fluid-offert" id="offert">
             <p><b>OFERTA</b></p>
             <p>Moja oferta to przede wszystkim profesjonalna oprawa muzyczna i doskonała zabawa, niezależnie od miejsca i profilu publiczności. Wyjątkowe umiejętności, charyzma, klasa a przede wszystkim POZYTYWNA ENERGIA, a także profesjonalny sprzęt DJ-ski-to
                 jest to co mnie wyróżnia. Wiem dobrze o tym, że każda zabawa jest inna i ma różne wymagania, dotyczące repertuaru muzycznego, a także stylu jej prowadzenia. Z tego też powodu proponuje Państwu dużą różnorodność, najwspanialszą atmosferę,
                 indywidualne podejście do każdego zlecenia. Dobieram muzykę odpowiednio dostosowaną do gustów uczestników zabawy oraz jej charakteru. Są to przeboje zarówno do tańca jak i do słuchania. Dzięki starannie dobranemu repertuarowi oraz umiejętnemu
                 prowadzeniu imprezy, nie będziesz musiał nikogo zachęcać do zabawy. Staram się skutecznie i ze smakiem rozkręcić każdą imprezę.</p>
         </div>
-        <div class="container-fluid-device">
+        <div class="container-fluid-device" id="device">
             <p><b>SPRZĘT</b></p>
             <p><b>Wysokiej jakości dźwięk, nowoczesny i markowy sprzęt oraz oświetlenie pasujące do każdego wnętrza - to przede wszystkim:</b></p>
             <ul>
@@ -63,7 +69,7 @@
             </ul>
             <p><b>Jestem pewien, że oświetlenie i nagłośnienie jakim dysponuje pomoże osiągnąć zamierzone cele oraz sprawi, że każde przyjęcie i event będzie wyjątkowe</b></p>
         </div>
-        <div class="container-fluid-contact">
+        <div class="container-fluid-contact" id="contact">
             <p><b>KONTAKT</b></p>
             <form action="https://example.net/comment.php" method="post" id="dodaj-komentarz">
                 <div class="form-left">
@@ -89,6 +95,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
+
             // declare variable
             var scrollTop = $(".scrollTop");
 
@@ -107,6 +114,23 @@
                 }
 
             }); // scroll END
+
+
+            //jump
+            $('a').click(function(e) {
+                e.preventDefault();
+                var tmp = e.currentTarget.classList;
+
+                $("html, body").animate({
+                    scrollTop: $('#' + tmp[1]).offset().top - $('nav').height()
+                }, 1000);
+            });
+
+            //toggle menu class menu
+            $('.header-nav-mobile button').click(function() {
+                $('nav').toggle();
+            });
+
         });
     </script>
 
