@@ -13,7 +13,7 @@
     <header class="container-fluid-header" id="main-page">
         <div class="header-nav">
             <div class="header-nav-mobile">
-                <img src="images/logo_small_white.png">
+                <a class="empty main-page"><img src="images/logo_small_white.png"></a>
                 <button>
                     <span></span>
                     <span></span>
@@ -104,18 +104,21 @@
             var scrollTop = $(".scrollTop");
 
             $(window).scroll(function() {
-                // declare variable
-                var topPos = $(this).scrollTop();
+                if ($(window).width() > 768) {
+                    // declare variable
+                    var topPos = $(this).scrollTop();
 
-                // if user scrolls down - show scroll to top button
-                if (topPos > 100) {
-                    $('nav').css("background", "black");
-                    $('nav').css('opacity', '.8');
+                    // if user scrolls down - show scroll to top button
+                    if (topPos > 100) {
+                        $('nav').css("background", "black");
+                        $('nav').css('opacity', '.8');
 
-                } else {
-                    $('nav').css("background", "transparent");
-                    $('nav').css('opacity', '1');
+                    } else {
+                        $('nav').css("background", "transparent");
+                        $('nav').css('opacity', '1');
+                    }
                 }
+
 
             }); // scroll END
 
@@ -131,8 +134,10 @@
             });
 
             //toggle menu class menu
-            $('.header-nav-mobile button').click(function() {
-                $('nav').toggle();
+            $('.header-nav-mobile button, nav ul li a, .header-nav-mobile a').click(function() {
+                if ($(window).width() < 768) {
+                    $('nav').toggle();
+                }
             });
 
         });

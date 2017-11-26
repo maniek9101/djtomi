@@ -412,6 +412,7 @@
         }
         nav ul li {
             width: 100%;
+            background: black;
         }
         nav ul li a {
             border: none;
