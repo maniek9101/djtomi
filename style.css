@@ -333,8 +333,73 @@
         nav {
             display: none;
         }
+        header {
+            height: 100vh;
+        }
         .container-fluid-header-content-logo img {
             width: 100vw;
-            height: 202px;
+            height: 200px;
+        }
+        .container-fluid-header-content-logo p:nth-of-type(1) {
+            top: -60px;
+        }
+        .container-fluid-header-content-logo p:nth-of-type(2) {
+            top: -20px;
+            text-align: center;
+            line-height: 100%;
+        }
+        .container-fluid-header-content {
+            height: 100vh;
+            justify-content: space-around;
+        }
+        .container-fluid-meet-me {
+            padding-left: 20px;
+            background-size: 90px 172px;
+        }
+        .container-fluid-meet-me p:nth-of-type(1) {
+            margin: 0 0 31.5px 75px;
+            font-size: 65px;
+            line-height: 100%;
+        }
+        .container-fluid-offert {
+            padding-left: 20px;
+            background-size: 130px 189px;
+        }
+        .container-fluid-offert p:nth-of-type(1) {
+            font-size: 65px;
+            line-height: 100%;
+            margin-right: 75px;
+        }
+        .container-fluid-offert p:nth-of-type(2) {
+            text-align: left;
+        }
+        .container-fluid-device {
+            padding: 20px 20px 0 20px;
+            background-size: 130px 187px;
+        }
+        .container-fluid-device p:nth-of-type(1) {
+            font-size: 65px;
+            line-height: 100%;
+            margin-left: 75px;
+        }
+        .container-fluid-contact {
+            padding-left: none;
+        }
+        .container-fluid-contact form .form-left {
+            margin-right: none;
+        }
+        .container-fluid-contact form {
+            height: auto;
+            min-height: 235px;
+            flex-direction: column;
+        }
+        .form-left input {
+            width: 90vw;
+        }
+        .form-right textarea {
+            width: 90vw;
+        }
+        footer img {
+            left: 0;
         }
     }
