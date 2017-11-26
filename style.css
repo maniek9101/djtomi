@@ -336,6 +336,9 @@
         header {
             height: 100vh;
         }
+        .container-fluid-sections-all {
+            background-size: 538px 1098.5px, 1000px 868px, 726.5px 1008.5px;
+        }
         .container-fluid-header-content-logo img {
             width: 100vw;
             height: 200px;
@@ -363,6 +366,7 @@
         }
         .container-fluid-offert {
             padding-left: 20px;
+            padding-right: initial;
             background-size: 130px 189px;
         }
         .container-fluid-offert p:nth-of-type(1) {
@@ -383,10 +387,11 @@
             margin-left: 75px;
         }
         .container-fluid-contact {
-            padding-left: none;
+            padding-left: initial;
+            padding-top: 30px;
         }
         .container-fluid-contact form .form-left {
-            margin-right: none;
+            margin-right: initial;
         }
         .container-fluid-contact form {
             height: auto;
