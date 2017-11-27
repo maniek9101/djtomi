@@ -104,7 +104,7 @@
             var scrollTop = $(".scrollTop");
 
             $(window).scroll(function() {
-                if ($(window).width() > 768) {
+                if ($(window).width() > 768) { //it's work only for desktop screen not mobile device, nav is still opacity.
                     // declare variable
                     var topPos = $(this).scrollTop();
 
@@ -118,8 +118,6 @@
                         $('nav').css('opacity', '1');
                     }
                 }
-
-
             }); // scroll END
 
 
@@ -134,9 +132,13 @@
             });
 
             //toggle menu class menu
-            $('.header-nav-mobile button, nav ul li a, .header-nav-mobile a').click(function() {
-                if ($(window).width() < 768) {
-                    $('nav').toggle();
+            $('.header-nav-mobile button, nav ul li a').click(function() {
+                if ($(window).width() < 768) { //mobile version
+                    if ($('nav').hasClass('active')) {
+                        $('nav').removeClass('active');
+                    } else {
+                        $('nav').addClass('active');
+                    }
                 }
             });
 
