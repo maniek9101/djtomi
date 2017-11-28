@@ -141,6 +141,10 @@
                     }
                 }
             });
+            //close nav while click in img nav
+            $('.header-nav-mobile a').click(function() {
+                $('nav').removeClass('active');
+            });
 
         });
     </script>
