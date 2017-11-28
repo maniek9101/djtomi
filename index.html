@@ -75,10 +75,10 @@
         </div>
         <div class="container-fluid-contact" id="contact">
             <p><b>KONTAKT</b></p>
-            <form action="https://example.net/comment.php" method="post" id="dodaj-komentarz">
+            <form method="post" action="kontakt.php" id="dodaj-komentarz">
                 <div class="form-left">
                     <label for="comment-author">IMIĘ</label>
-                    <input type="text" name="author" id="comment-author" required>
+                    <input type="text" name="name" id="comment-author" required>
                     <label for="comment-email">E-MAIL</label>
                     <input type="email" name="email" id="comment-email" required>
                     <p>tel. 500 76 06 06</p>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="form-right">
                     <label for="comment-comment">WIADOMOŚĆ</label>
-                    <textarea name="comment" id="comment-comment" cols="48" rows="7" required></textarea>
+                    <textarea name="message" id="comment-comment" cols="48" rows="7" required></textarea>
                     <button name="submit" type="submit" id="comment-submit">WYŚLIJ</button>
                 </div>
             </form>

@@ -516,9 +516,3 @@
             left: 0;
         }
     }
-    
-    @media screen and (orientation:landscape) {
-        .container-fluid-header-content-logo img {
-            display: none;
-        }
-    }
