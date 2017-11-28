@@ -9,7 +9,6 @@
     }
     
     .header-nav {
-        border: 2px solide white;
         position: fixed;
         top: 0;
         z-index: 3;
@@ -27,7 +26,6 @@
         position: absolute;
         right: 50px;
         top: 10px;
-        border: 2px solid green;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -47,7 +45,6 @@
     }
     
     nav {
-        border: 1px solid red;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -56,7 +53,6 @@
     nav ul {
         display: flex;
         align-items: center;
-        border: 1px solid blue;
         width: 100vw;
         max-width: 1280px;
     }
@@ -69,7 +65,6 @@
     }
     
     nav ul li {
-        border: 1px solid white;
         height: 100%;
         list-style: none;
         transition: all .5s;
@@ -105,7 +100,6 @@
         background: url('images/background_header.png')center center;
         background-size: cover;
         background-repeat: no-repeat;
-        border: 1px solid aqua;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -114,7 +108,6 @@
     .container-fluid-header-content {
         width: 100vw;
         max-width: 1280px;
-        border: 1px solid white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -123,11 +116,9 @@
     .container-fluid-header-content img {
         width: 106px;
         height: 106px;
-        border: 1px dotted wheat;
     }
     
     .container-fluid-header-content-logo {
-        border: 1px solid whitesmoke;
         font-family: 'Muli', sans-serif;
         color: white;
         position: relative;
@@ -156,7 +147,6 @@
     .container-fluid-header-content-logo img {
         width: 790px;
         height: 404px;
-        border: 1px dotted dodgerblue;
     }
     
     .container-fluid-sections-all {
@@ -165,7 +155,6 @@
         min-height: 1208.5px;
         width: 100vw;
         max-width: 100%;
-        border: 1px solid brown;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -177,7 +166,6 @@
     }
     
     .container-fluid-meet-me {
-        border: 1px solid black;
         padding-left: 192.5px;
         padding-top: 16px;
         width: 100vw;
@@ -205,7 +193,6 @@
     }
     
     .container-fluid-offert {
-        border: 1px solid red;
         padding-top: 16px;
         padding-right: 175px;
         width: 100vw;
@@ -234,7 +221,6 @@
     }
     
     .container-fluid-device {
-        border: 1px solid rgb(0, 255, 64);
         padding: 20px 0 0 200px;
         width: 100vw;
         max-width: 1280px;
@@ -247,7 +233,6 @@
     }
     
     .container-fluid-device ul {
-        border: 1px solid red;
         margin-bottom: 24px;
     }
     
@@ -280,7 +265,6 @@
         width: 100vw;
         max-width: 1280px;
         height: auto;
-        border: 1px solid green;
         padding-left: 222px;
     }
     
@@ -295,13 +279,11 @@
     .container-fluid-contact form {
         width: 100%;
         height: 235px;
-        border: 1px solid red;
         display: flex;
         flex-direction: row;
     }
     
     .container-fluid-contact form .form-left {
-        border: 1px solid orangered;
         display: flex;
         flex-direction: column;
         color: #000000;
@@ -333,7 +315,6 @@
     }
     
     .container-fluid-contact form .form-right {
-        border: 1px solid purple;
         display: flex;
         flex-direction: column;
         color: #000000;
@@ -375,11 +356,9 @@
         width: 100vw;
         max-width: 1280px;
         height: 673px;
-        border: 3px solid rebeccapurple;
     }
     
     footer img {
-        border: 1px solid red;
         position: relative;
         left: 222px;
     }
