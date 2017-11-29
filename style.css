@@ -502,9 +502,11 @@
     @media only screen and (max-width: 768px) and (orientation:landscape) {
         .container-fluid-header-content-logo p:nth-of-type(1) {
             top: 0;
+            font-size: 40px;
         }
         .container-fluid-header-content-logo p:nth-of-type(2) {
             top: 30px;
+            font-size: 30px;
         }
         .container-fluid-header-content {
             padding-top: 50px;
@@ -514,6 +516,7 @@
             height: 75px;
         }
         .container-fluid-header-content-logo img {
-            width: 70vw;
+            width: 60vw;
+            height: auto;
         }
     }
