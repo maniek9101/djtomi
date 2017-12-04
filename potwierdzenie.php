@@ -61,7 +61,7 @@ $(document).ready(function(e) {
 		count -=1;
 		if(count==0)
 		{
-			window.location.href = 'http://www.tomaszblaszczyk.com'
+			window.location.href = 'http://www.djtomi.com/strona/'
 		}	
 		$("span").html(count);
 	}
