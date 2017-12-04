@@ -146,6 +146,14 @@
                 $('nav').removeClass('active');
             });
 
+            //bounce logo 
+            if ($(window).width() > 768) { //only for desktop
+                $('.container-fluid-header-content-logo img').addClass('active-logo');
+
+                setInterval(function() {
+                    $('.container-fluid-header-content-logo img').toggleClass('active-logo')
+                }, 2000);
+            }
         });
     </script>
 

@@ -15,7 +15,7 @@ $odkogo = "janczakpawel@op.pl";
 
 // Podajesz adres email na który chcesz otrzymać wiadomość
 //kontakt@tomaszblaszczyk.com
-$dokogo = "janczakpawel@op.pl";
+$dokogo = "biuro@djtomi.com";
 
 // Podajesz tytuł jaki ma mieć ta wiadomość email
 $tytul = "Wiadomość z www.djtomi.com";
